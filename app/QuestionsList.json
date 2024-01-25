@@ -1,0 +1,64 @@
+
+{
+  "StartScreen" : {
+    "BG_Color" : "#2a5cf6"
+  },
+    "Data" : [
+    {
+      "id" : 1,
+      "frage": "Wie oft sollte man pro Woche Sport treiben?",
+      "Antworten": [
+        { "text": "Einmal", "isCorrect": false },
+        { "text": "Dreimal", "isCorrect": true },
+        { "text": "Fünfmal", "isCorrect": false },
+        { "text": "Täglich", "isCorrect": false }
+      ],
+      "isMultipleChoice": false,
+      "correctChoices" : 1,
+      "BG_Color" : "#8b5cf6"
+    },
+    {
+      "id" : 2,
+      "frage": "Welche Übung trainiert die Bauchmuskeln?",
+      "Antworten": [
+        { "text": "Bankdrücken", "isCorrect": false },
+        { "text": "Sit-ups", "isCorrect": true },
+        { "text": "Kniebeugen", "isCorrect": false },
+        { "text": "Bizepscurls", "isCorrect": false }
+      ],
+      "isMultipleChoice": false,
+      "correctChoices" : 1,
+      "BG_Color" : "#ec224b"
+    },
+    {
+      "id" : 3,
+      "frage": "Welche Übung trainiert die Bauchmuskeln?",
+      "Antworten": [
+        { "text": "Bankdrücken", "isCorrect": false },
+        { "text": "Sit-ups", "isCorrect": true },
+        { "text": "Kniebeugen", "isCorrect": false },
+        { "text": "Bizepscurls", "isCorrect": false }
+      ],
+      "isMultipleChoice": false,
+      "correctChoices" : 1,
+      "BG_Color" : "#1e40af"
+    },
+    {
+      "id" : 4,
+      "frage": "Was ist gut für Sportler?",
+      "Antworten": [
+        { "text": "Äpfel", "isCorrect": true },
+        { "text": "Alkohol", "isCorrect": false },
+        { "text": "Erdbeeren", "isCorrect": true },
+        { "text": "Protein", "isCorrect": true }
+      ],
+      "isMultipleChoice": true,
+      "correctChoices" : 3,
+      "BG_Color" : "#38c172"
+    }
+  ],
+  "EndScreen" : {
+      "MailTo" : "info@johndoe.com",
+      "BG_Color" : "#9a9aff"
+  }
+}
