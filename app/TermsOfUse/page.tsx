@@ -7,7 +7,7 @@ export default function page ({}:TermsOfUseProps){
         <div className="w-full h-full text-center bg-white
         flex flex-col justify-center items-center">
             <h1>
-                Das ist eine Dummy Seite ohne Datenspeicherung und Backend
+                This is a dummy page without data storage and backend.
             </h1>
 
             <Link href={"/#QuizEnd"}

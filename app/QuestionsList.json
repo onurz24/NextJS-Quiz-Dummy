@@ -6,12 +6,12 @@
     "Data" : [
     {
       "ID" : 1,
-      "Question_Title": "Wie oft sollte man pro Woche Sport treiben?",
+      "Question_Title": "How often should one exercise per week?",
       "Answers": [
-        { "text": "Einmal", "isCorrect": false },
-        { "text": "Dreimal", "isCorrect": true },
-        { "text": "Fünfmal", "isCorrect": false },
-        { "text": "Täglich", "isCorrect": false }
+      { "text": "Once", "isCorrect": false },
+      { "text": "Three times", "isCorrect": true },
+      { "text": "Five times", "isCorrect": false },
+      { "text": "Daily", "isCorrect": false }
       ],
       "isMultipleChoice": false,
       "correctChoices" : 1,
@@ -19,12 +19,12 @@
     },
     {
       "ID" : 2,
-      "Question_Title": "Welche Übung trainiert die Bauchmuskeln?",
+      "Question_Title": "Which exercise trains the abdominal muscles?",
       "Answers": [
-        { "text": "Bankdrücken", "isCorrect": false },
-        { "text": "Sit-ups", "isCorrect": true },
-        { "text": "Kniebeugen", "isCorrect": false },
-        { "text": "Bizepscurls", "isCorrect": false }
+      { "text": "Bench press", "isCorrect": false },
+      { "text": "Sit-ups", "isCorrect": true },
+      { "text": "Squats", "isCorrect": false },
+      { "text": "Bicep curls", "isCorrect": false }
       ],
       "isMultipleChoice": false,
       "correctChoices" : 1,
@@ -32,12 +32,12 @@
     },
     {
       "ID" : 3,
-      "Question_Title": "Welche Übung trainiert die Bauchmuskeln?",
+      "Question_Title": "Which exercise targets the abdominal muscles?",
       "Answers": [
-        { "text": "Bankdrücken", "isCorrect": false },
-        { "text": "Sit-ups", "isCorrect": true },
-        { "text": "Kniebeugen", "isCorrect": false },
-        { "text": "Bizepscurls", "isCorrect": false }
+      { "text": "Bench press", "isCorrect": false },
+      { "text": "Sit-ups", "isCorrect": true },
+      { "text": "Squats", "isCorrect": false },
+      { "text": "Bicep curls", "isCorrect": false }
       ],
       "isMultipleChoice": false,
       "correctChoices" : 1,
@@ -45,12 +45,12 @@
     },
     {
       "ID" : 4,
-      "Question_Title": "Was ist gut für Sportler?",
+      "Question_Title": "What is good for athletes?",
       "Answers": [
-        { "text": "Äpfel", "isCorrect": true },
-        { "text": "Alkohol", "isCorrect": false },
-        { "text": "Erdbeeren", "isCorrect": true },
-        { "text": "Protein", "isCorrect": true }
+      { "text": "Apples", "isCorrect": true },
+      { "text": "Alcohol", "isCorrect": false },
+      { "text": "Strawberries", "isCorrect": true },
+      { "text": "Protein", "isCorrect": true }
       ],
       "isMultipleChoice": true,
       "correctChoices" : 3,
