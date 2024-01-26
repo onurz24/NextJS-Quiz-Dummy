@@ -18,7 +18,7 @@ export const Question = ({ ID, Question_Title, BG_Color, Answers,
   isMultipleChoice, correctChoices }: QuestionProps) => {
 
   /* Checks if User has Selected more than allowed */
-  const [SelectedQuestions,setSelectedQuestions] = useState(0);
+  const [SelectedAnswers,setSelectedQuestions] = useState(0);
 
   return (
     <div
@@ -38,16 +38,19 @@ export const Question = ({ ID, Question_Title, BG_Color, Answers,
             Antworten={Answer}
             isMultipleChoice={isMultipleChoice}
             correctChoices={correctChoices}
-            SelectedQuestions={SelectedQuestions}
-            setSelectedQuestions={setSelectedQuestions}
+            SelectedAnswers={SelectedAnswers}
+            setSelectedAnswers={setSelectedQuestions}
           />
         ))}
       </div>
 
 
-
           <QuestionSubmit/>
 
+          <div className="text-white">
+            ({SelectedAnswers} of&nbsp;
+            {correctChoices} selected)
+          </div>
     </div>
   );
 };

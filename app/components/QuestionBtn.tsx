@@ -8,11 +8,11 @@ interface QuestionProps {
     },
     isMultipleChoice : boolean,
     correctChoices : number,
-    SelectedQuestions : number,
-    setSelectedQuestions : (number : number) => void;
+    SelectedAnswers : number,
+    setSelectedAnswers : (number : number) => void;
     }
 export const QuestionBtn = ({Antworten,isMultipleChoice, correctChoices ,
-setSelectedQuestions,SelectedQuestions
+setSelectedAnswers,SelectedAnswers
 } : QuestionProps ) => {
 
 
@@ -21,12 +21,12 @@ const [isSelected, setIsSelected] = useState(false);
 
 
 const handleSelect = () => {
-        if(SelectedQuestions < correctChoices && !isSelected){
-            setSelectedQuestions(SelectedQuestions + 1);
+        if(SelectedAnswers < correctChoices && !isSelected){
+            setSelectedAnswers(SelectedAnswers + 1);
             setIsSelected(true);
         }
-        if(SelectedQuestions > 0 && isSelected){
-            setSelectedQuestions(SelectedQuestions - 1);
+        if(SelectedAnswers > 0 && isSelected){
+            setSelectedAnswers(SelectedAnswers - 1);
             setIsSelected(false);
         }
 }

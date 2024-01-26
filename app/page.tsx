@@ -25,7 +25,8 @@ export default function Home () {
             BG_Color={List.BG_Color} key={index} Question_Title={List.Question_Title}
             isMultipleChoice={List.isMultipleChoice}
             correctChoices={List.correctChoices}
-          />)
+          />
+          )
     })}
 
       {/* Congratulations Text,
