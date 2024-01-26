@@ -1,8 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit"
 import SelectedQuestionsReducer from "./SelectQuestionSlice";
+import TermsReducer from "./TermsSlice";
 export const store = configureStore( {
     reducer : {
-        SelectedQuestions : SelectedQuestionsReducer
+        SelectedQuestions : SelectedQuestionsReducer,
+        Terms : TermsReducer,
     },
 });
 

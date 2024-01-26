@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { PiConfettiBold } from "react-icons/pi";
 import { SendQuizBtn } from "./SendQuizBtn";
+import { useState } from "react";
+import { AcceptTerms } from "./AcceptTerms";
 
 
 interface QuestionsEndProps {
@@ -33,8 +35,8 @@ export const QuestionsEnd = ({ BG_Color,MailTo } : QuestionsEndProps) => {
 
                 {/* Form to Backend */}
                 <div className="flex flex-col pt-4 gap-4 max-md:w-[80vw] max-sm:w-[95vw]">
-                    <input type="text" placeholder="example@mail.com"
-                    className="text-xl p-2 rounded-md outline-none placeholder:text-center
+                    <input autoComplete="email" type="email" placeholder="example@mail.com"
+                    className="text-center text-xl p-2 rounded-md outline-none
                     "/>
                     <div className="flex flex-col justify-center items-center gap-2 text-center">
                         <label htmlFor="OptInQuiz">
@@ -44,12 +46,8 @@ export const QuestionsEnd = ({ BG_Color,MailTo } : QuestionsEndProps) => {
                             </Link>
                             &nbsp;and accept them
                         </label>
-                        <input className="
-                            w-5 h-5 cursor-pointer
-                            active:scale-95 active:transition-all
-                            checked:hue-rotate-90"
-                            type="checkbox" name="OptInQuiz" id="OptInQuiz" />
-
+                        <AcceptTerms/>
+  
                     </div>
                     <SendQuizBtn MailTo={MailTo}/>
                 </div>

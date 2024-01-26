@@ -9,6 +9,7 @@ export default function page ({}:TermsOfUseProps){
             <h1>
                 Das ist eine Dummy Seite ohne Datenspeicherung und Backend
             </h1>
+
             <Link href={"/#QuizEnd"}
                 className='bg-blue-500 text-white
                 rounded-md p-4 mt-4

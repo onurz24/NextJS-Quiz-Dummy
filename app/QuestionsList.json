@@ -5,9 +5,9 @@
   },
     "Data" : [
     {
-      "id" : 1,
-      "frage": "Wie oft sollte man pro Woche Sport treiben?",
-      "Antworten": [
+      "ID" : 1,
+      "Question_Title": "Wie oft sollte man pro Woche Sport treiben?",
+      "Answers": [
         { "text": "Einmal", "isCorrect": false },
         { "text": "Dreimal", "isCorrect": true },
         { "text": "Fünfmal", "isCorrect": false },
@@ -18,9 +18,9 @@
       "BG_Color" : "#8b5cf6"
     },
     {
-      "id" : 2,
-      "frage": "Welche Übung trainiert die Bauchmuskeln?",
-      "Antworten": [
+      "ID" : 2,
+      "Question_Title": "Welche Übung trainiert die Bauchmuskeln?",
+      "Answers": [
         { "text": "Bankdrücken", "isCorrect": false },
         { "text": "Sit-ups", "isCorrect": true },
         { "text": "Kniebeugen", "isCorrect": false },
@@ -31,9 +31,9 @@
       "BG_Color" : "#ec224b"
     },
     {
-      "id" : 3,
-      "frage": "Welche Übung trainiert die Bauchmuskeln?",
-      "Antworten": [
+      "ID" : 3,
+      "Question_Title": "Welche Übung trainiert die Bauchmuskeln?",
+      "Answers": [
         { "text": "Bankdrücken", "isCorrect": false },
         { "text": "Sit-ups", "isCorrect": true },
         { "text": "Kniebeugen", "isCorrect": false },
@@ -44,9 +44,9 @@
       "BG_Color" : "#1e40af"
     },
     {
-      "id" : 4,
-      "frage": "Was ist gut für Sportler?",
-      "Antworten": [
+      "ID" : 4,
+      "Question_Title": "Was ist gut für Sportler?",
+      "Answers": [
         { "text": "Äpfel", "isCorrect": true },
         { "text": "Alkohol", "isCorrect": false },
         { "text": "Erdbeeren", "isCorrect": true },

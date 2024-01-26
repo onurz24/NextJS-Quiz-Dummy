@@ -35,6 +35,26 @@ body{
 
 
 .error-shake{
+  animation: invalid-shake 0.5s ease-in-out;
+  @keyframes invalid-shake {
+    0% {
+      transform: translateX(0px);
+    }
+    25% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    75% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+}
+.error-shake-border{
   border: 2px solid red;
   animation: invalid-shake 0.5s ease-in-out;
   @keyframes invalid-shake {
