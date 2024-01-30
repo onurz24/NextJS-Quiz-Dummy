@@ -20,6 +20,7 @@ export const Question = ({ ID, Question_Title, BG_Color, Answers,
 
   /* Checks if User has Selected more than allowed */
   const [SelectedAnswers,setSelectedQuestions] = useState(0);
+  const [isValid,setIsValid] = useState(true);
 
   return (
     <div
@@ -35,6 +36,7 @@ export const Question = ({ ID, Question_Title, BG_Color, Answers,
       {/* Loop throught all Answers of a Question and create Clickable Answer Buttons*/}
         {Answers.map((Answer, index) => (
           <QuestionBtn
+          isValid={isValid}
             key={index}
             Antworten={Answer}
             isMultipleChoice={isMultipleChoice}
@@ -50,7 +52,9 @@ export const Question = ({ ID, Question_Title, BG_Color, Answers,
             correctChoices={correctChoices}
             snapContainerRef={snapContainerRef}
             SelectedAnswers={SelectedAnswers}
-            />
+            isValid={isValid}
+            setIsValid={setIsValid}
+          />
 
           <div className="text-white">
             ({SelectedAnswers} of&nbsp;

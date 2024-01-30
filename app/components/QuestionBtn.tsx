@@ -10,13 +10,13 @@ interface QuestionProps {
     correctChoices : number,
     SelectedAnswers : number,
     setSelectedAnswers : (number : number) => void;
-    }
+    isValid : boolean;
+}
 export const QuestionBtn = ({Antworten,isMultipleChoice, correctChoices ,
-setSelectedAnswers,SelectedAnswers
+setSelectedAnswers,SelectedAnswers,isValid
 } : QuestionProps ) => {
 
 
-const [isDisabled, setIsDisabled] = useState(false);
 const [isSelected, setIsSelected] = useState(false);
 
 
@@ -37,7 +37,7 @@ const handleSelect = () => {
                 border-2 cursor-pointer
                 select-none pl-4 pr-6
                 ${isSelected? "bg-blue-600 transition-all " : "bg-neutral-100  transition-all "}
-                ${isDisabled? "error-shake-border" : ""}
+                ${isValid ? "" : "error-shake-border"}
                 `}
             onClick={handleSelect}>
                 {Antworten.text}

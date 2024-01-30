@@ -4,8 +4,12 @@ interface QuestionSubmitProps{
     snapContainerRef : any;
     correctChoices : number;
     SelectedAnswers : number;
+    isValid : boolean | null;
+    setIsValid : (boolean : boolean) => void;
 }
-export const QuestionSubmit = ({snapContainerRef,correctChoices,SelectedAnswers}:QuestionSubmitProps) => {
+export const QuestionSubmit = ({snapContainerRef,
+    correctChoices,SelectedAnswers,isValid,setIsValid
+    }:QuestionSubmitProps) => {
 
     const handleScroll = () => {
         if (snapContainerRef.current && SelectedAnswers == correctChoices) {
@@ -19,7 +23,12 @@ export const QuestionSubmit = ({snapContainerRef,correctChoices,SelectedAnswers}
                 left: 0 ,
                 behavior: 'smooth'
             });
-        };
+        }else{
+            setIsValid(false);
+            setTimeout(()=>{
+                setIsValid(true);
+            },500);
+        }
 }
     return(
         <div
