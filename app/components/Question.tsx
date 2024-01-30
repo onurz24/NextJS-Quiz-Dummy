@@ -12,10 +12,11 @@ interface QuestionProps {
   Answers: Array<{ text: string; isCorrect: boolean }>;
   isMultipleChoice : boolean;
   correctChoices : number;
+  snapContainerRef : any;
 }
 
 export const Question = ({ ID, Question_Title, BG_Color, Answers,
-  isMultipleChoice, correctChoices }: QuestionProps) => {
+  isMultipleChoice, correctChoices,snapContainerRef  }: QuestionProps) => {
 
   /* Checks if User has Selected more than allowed */
   const [SelectedAnswers,setSelectedQuestions] = useState(0);
@@ -45,7 +46,11 @@ export const Question = ({ ID, Question_Title, BG_Color, Answers,
       </div>
 
 
-          <QuestionSubmit/>
+          <QuestionSubmit
+            correctChoices={correctChoices}
+            snapContainerRef={snapContainerRef}
+            SelectedAnswers={SelectedAnswers}
+            />
 
           <div className="text-white">
             ({SelectedAnswers} of&nbsp;

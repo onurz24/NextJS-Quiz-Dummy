@@ -2,13 +2,41 @@
 'use client';
 import { FaArrowDown, FaArrowUp } from "react-icons/fa"
 
-export const QuizControls = () => {
+
+interface QuizControlsProps {
+    snapContainerRef: any;
+};
+export const QuizControls = ({snapContainerRef}:QuizControlsProps) => {
 
     const handleScroll = (direction : string) => {
         switch(direction) {
             case "Up":
+                if (snapContainerRef.current) {
+                    console.log(24);
+                    // Asserting the type to HTMLElement or Element
+                    const container = snapContainerRef.current as HTMLElement;
+
+                    // Implement the logic for scrolling
+                    container.scrollBy({
+                        top:  -window.innerHeight,
+                        left: 0 ,
+                        behavior: 'smooth'
+                    });
+                };
                 break;
             case "Down" :
+                        if (snapContainerRef.current) {
+                            console.log(24);
+                            // Asserting the type to HTMLElement or Element
+                            const container = snapContainerRef.current as HTMLElement;
+
+                            // Implement the logic for scrolling
+                            container.scrollBy({
+                                top:  window.innerHeight,
+                                left: 0 ,
+                                behavior: 'smooth'
+                            });
+                        };
                 break;
         }
     }

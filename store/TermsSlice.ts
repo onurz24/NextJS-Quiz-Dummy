@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
 
 const SelectedQuestions = createSlice({
-    name: 'TermsSlice',
+    name: 'Terms',
     initialState: false,
     reducers: {
         toggle: state =>{
